@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/learn.css">
+
+
+    <!-- 
+    - google font link
+  -->
+    <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Learn More Page</title>
+</head>
+<body>
+        
+    <div class="wrapper">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq">
+            <button class="accordion">
+                <span>WHY SHOULD I USE A TRAVEL AGENT TO BOOK A VACATION?</span>
+                <i class="fa solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>A travel agent takes all of the headache out of planning a trip and handles virtually all aspects of your travel, at absolutely no cost to you. The combined experience of the team and the feedback.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <button class="accordion">
+                <span>CAN YOU WORK WITHIN A CERTAIN BUDGET?</span>
+                <i class="fa solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Yes, we work within any and all realistic budgets, and an honest sharing of ideas and goals helps us immensely when making recommendations and suggested edits to travel plans.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <button class="accordion">
+                <span>DOES IT COST MONEY TO GET A QUOTE?</span>
+                <i class="fa solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>No, there is no fee for our vacation planning services as the travel vendors involved recognize our value and compensate us from the gross amount paid (what you would have paid even without our assistance). For those complicated international itineraries that require custom crafting and significant involvement of our international on-location partners, we do request an intent-to-travel deposit to begin the process. This deposit is applied to the reservations that are made on your behalf.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <button class="accordion">
+                <span>DO I NEED TRAVEL INSURANCE?</span>
+                <i class="fa solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Travel insurance is available and recommended to protect your travel investment. Many trips, such as tours and cruises, involve non-refundable funds paid months in advance. Travel insurance protects you from losing this investment. Perhaps even more important is the ‘during travel’ coverage and assistance that comes with the top-flight insurance companies we carry.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <button class="accordion">
+                <span>HOW DO I CANCEL A TRIP?</span>
+                <i class="fa solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Call us right away. If it’s after normal business hours, please contact the next involved travel supplier to cancel any reservations you will not be able to use. If you purchased travel insurance, please contact the insurance company’s 24-hour line to start the cancellation process and ensure your maximum refund.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <button class="accordion">
+                <span>CAN I MAKE A BOOKING OVER THE PHONE?</span>
+                <i class="fa solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Yes, you can call us on +91 80883 43230 (standard charges apply)</p>
+            </div>
+        </div>
+        <div class="faq">
+            <button class="accordion">
+                <span>HOW DO I KNOW THAT MY BOOKINGIS CONFIRMED?</span>
+                <i class="fa solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Whether a booking is made online or over the phone, a confirmation would be sent to you via e-mail, which would include your reservation number and travel details.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <button class="accordion">
+                <span>WILL I HAVE TO PAY ANY CHARGES IF I CANCEL MY PACKAGE BOKKING?</span>
+                <i class="fa solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Cancellation policies and charges will depend on the hotel booked. Travelguru, will charge 3% of the total transaction amount as a processing charge for all cancellations above and beyond the charges by the hotel.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for(i=0;i<acc.length;i++){
+            acc[i].addEventListener("click", function(){
+                this.classList.toggle("active");
+                this.parentElement.classList.toggle("active");
+
+                var pannel = this.nextElementSibling;
+                if(pannel.style.display === "block"){
+                    pannel.style.display = "none";
+                }
+                else{
+                    pannel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

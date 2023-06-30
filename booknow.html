@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/book.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+
+    <title>Booking Page</title>
+
+</head>
+<body>
+  <div class="container">
+    <header>Booking request</header> 
+
+    <form action="#">
+      <div class="form first">
+        <div class="details personal">
+          <span class="title">Your personal details</span>
+
+            <div class="fields">
+              <div class="input-fields">
+                <label >Full Name</label>
+                <input type="text" placeholder="Enter your Full name" required>
+              </div>
+
+              <div class="input-fields">
+                <label >Email</label>
+                <input type="email" placeholder="Enter your Email" required>
+              </div>
+              <div class="input-fields">
+                <label >Mobile number</label>
+                <input type="tel" placeholder="Enter your Mobile no." required>
+              </div>
+
+              <div class="input-fields">
+                <label >Your Query</label>
+                <input type="text" placeholder="Enter your Full name" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="details tour">
+          <span class="title">Your Travel Requirement</span>
+
+          <div class="fields">
+            <div class="input-fields">
+              <label >Tour Place</label>
+              <input type="text" placeholder="Enter your place to visit" required>
+            </div>
+
+            <div class="input-fields">
+              <label >Date of Journey</label>
+              <input type="date" placeholder="Enter your date of journey" required>
+            </div>
+            <div class="input-fields">
+              <label >Adults(above 12 years)</label>
+              <input type="number" placeholder="Number of Adults" required>
+            </div>
+
+            <div class="input-fields">
+              <label >Children(5-12)</label>
+              <input type="number" placeholder="Number of Children" required>
+            </div>
+          </div>
+        </div>
+          <button class="submit" onclick="submit()">
+            <span class="btnText">Submit</span>
+          </button>
+        
+        <script>
+          function submit(){
+            alert("submitted");
+          }
+        </script>
+
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
